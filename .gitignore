@@ -1,0 +1,44 @@
+# 忽略所有 .onnx 文件
+*.onnx
+
+# 忽略 devel 和 build 文件夹（包括子目录）
+devel/
+build/
+
+# 忽略其他编译文件
+### C/C++ 编译生成 ###
+*.o
+*.a
+*.so
+*.out
+*.exe
+
+### CMake 生成 ###
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+
+### Python 缓存 ###
+__pycache__/
+*.pyc
+
+### macOS 系统文件 ###
+.DS_Store
+
+### VS Code 配置（可选） ###
+.vscode/
+
+# 忽略所有 bin 目录（常见构建输出）
+bin/
+
+# 忽略日志文件
+*.log
+
+# 忽略临时文件
+*~
+*.tmp
+
+# 忽略特定目录下的编译文件
+**/__pycache__/
+**/*.dSYM/    # macOS 调试符号
